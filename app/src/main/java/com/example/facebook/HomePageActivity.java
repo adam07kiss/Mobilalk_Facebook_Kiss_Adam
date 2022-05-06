@@ -215,8 +215,6 @@ public class HomePageActivity extends AppCompatActivity {
                 return true;
             case R.id.settings_button:
                 Log.d(LOG_TAG, "Setting clicked!");
-                FirebaseAuth.getInstance().signOut();
-                finish();
                 return true;
             case R.id.messenger:
                 Log.d(LOG_TAG, "Messenger clicked!");

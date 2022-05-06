@@ -52,5 +52,6 @@ dependencies {
     implementation "androidx.recyclerview:recyclerview-selection:1.1.0"
     implementation 'com.github.bumptech.glide:glide:4.13.0'
     implementation "androidx.cardview:cardview:1.0.0"
-    implementation "com.firebaseui:firebase-ui-auth:4.3.2"
+    // Ez eltüntetné a a MainActivity-s default_web_client_id errort, de nem fut le a program, ezért kommentezve hagyom
+//    implementation "com.firebaseui:firebase-ui-auth:4.3.2"
 }
