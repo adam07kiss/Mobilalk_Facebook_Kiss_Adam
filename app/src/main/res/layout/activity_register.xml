@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/registrationTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/register"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteY="35dp"
+        android:textColor="@color/facebook"/>
+
+    <EditText
+        android:id="@+id/userFirstNameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registrationTV"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="@dimen/register_margin_top"
+        android:layout_marginRight="30dp"
+        android:ems="10"
+        android:hint="@string/user_first_name"
+        android:inputType="textPersonName"
+        android:textColor="@color/facebook"/>
+
+    <EditText
+        android:id="@+id/userSecondNameETt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userFirstNameET"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="@dimen/register_margin_top"
+        android:layout_marginRight="30dp"
+        android:ems="10"
+        android:hint="@string/user_second_name"
+        android:inputType="textPersonName"
+        android:textColor="@color/facebook"/>
+
+    <EditText
+        android:id="@+id/userEmailET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/register_margin_top"
+        android:layout_marginLeft="@dimen/default_margin_side"
+        android:layout_marginRight="@dimen/default_margin_side"
+        android:ems="10"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/userSecondNameETt"
+        android:textColor="@color/facebook"/>
+
+    <EditText
+        android:id="@+id/passwordET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/register_margin_top"
+        android:layout_marginLeft="@dimen/default_margin_side"
+        android:layout_marginRight="@dimen/default_margin_side"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/userEmailET"
+        android:textColor="@color/facebook"/>
+
+    <EditText
+        android:id="@+id/passwordConfirmET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/register_margin_top"
+        android:layout_marginLeft="@dimen/default_margin_side"
+        android:layout_marginRight="@dimen/default_margin_side"
+        android:ems="10"
+        android:hint="@string/password_again"
+        android:inputType="textPassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/passwordET"
+        android:textColor="@color/facebook"/>
+
+    <EditText
+        android:id="@+id/phoneET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_margin_side"
+        android:layout_marginTop="@dimen/register_margin_top"
+        android:layout_marginRight="@dimen/default_margin_side"
+        android:ems="10"
+        android:hint="@string/phone_number"
+        android:inputType="phone"
+        android:layout_below="@id/passwordConfirmET"
+        android:textColor="@color/facebook"/>
+
+    <Spinner
+        android:id="@+id/phoneSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneET"
+        android:layout_marginLeft="@dimen/default_margin_side"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="@dimen/default_margin_side" />
+
+
+    <EditText
+        android:id="@+id/addressET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/register_margin_top"
+        android:layout_marginLeft="@dimen/default_margin_side"
+        android:layout_marginRight="@dimen/default_margin_side"
+        android:ems="10"
+        android:maxLines="3"
+        android:hint="@string/address"
+        android:inputType="textMultiLine|textPostalAddress"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/phoneSpinner"
+        android:textColor="@color/facebook"/>
+
+    <TextView
+        android:id="@+id/accountTypeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/register_margin_top"
+        android:layout_marginLeft="@dimen/default_margin_side"
+        android:layout_marginRight="@dimen/default_margin_side"
+        android:text="@string/account_type"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/addressET"
+        android:textColor="@color/facebook"/>
+
+    <RadioGroup
+        android:id="@+id/accountTypeGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/register_margin_top"
+        android:layout_marginLeft="@dimen/default_margin_side"
+        android:layout_marginRight="@dimen/default_margin_side"
+        android:layout_below="@id/accountTypeTextView"
+        android:textColor="@color/facebook">
+
+        <RadioButton
+            android:id="@+id/user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/customer"
+            android:textColor="@color/facebook"/>
+
+        <RadioButton
+            android:id="@+id/page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/seller"
+            android:textColor="@color/facebook"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/accountTypeGroup"
+        android:layout_marginTop="@dimen/register_margin_top"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/registration"
+            android:onClick="register"
+            android:backgroundTint="@color/facebook"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="@string/cancel"
+            android:onClick="cancel"
+            android:backgroundTint="@color/facebook"/>
+    </LinearLayout>
+
+</RelativeLayout>
